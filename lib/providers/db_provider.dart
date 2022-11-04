@@ -3,9 +3,9 @@ import 'package:latihan_sqflite_dicoding/db/database_helper.dart';
 import 'package:latihan_sqflite_dicoding/models/note.dart';
 
 class DbProvider extends ChangeNotifier {
-  List<Note> _notes = [];
+  
   late DatabaseHelper _dbHelper;
-
+  List<Note> _notes = [];
   List<Note> get notes => _notes;
 
   // mengimplementasi state management untuk mengakses data dari database
